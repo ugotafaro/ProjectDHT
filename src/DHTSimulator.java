@@ -32,7 +32,7 @@ public class DHTSimulator {
     }
 
     // Méthode pour ajouter un nœud au réseau
-    public void join2(Node newNode) {
+    public void join(Node newNode) {
 
         //cas pour inserer le premier noeud
         if (this.firstNode.getNext() == this.firstNode.getPrev()) {
@@ -88,8 +88,13 @@ public class DHTSimulator {
 
         }
     }
-}
+
 
     // Méthode pour retirer un nœud du réseau
+    public void leave(Node leaveNode) {
+        leaveNode.getNext().setPrev(leaveNode.getPrev());
+        leaveNode.getPrev().setNext(leaveNode.getNext());
 
+    }
+}
 
