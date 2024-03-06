@@ -3,11 +3,11 @@ import java.util.List;
 import java.util.PriorityQueue;
 
 public class DHTSimulator {
-    private List<Node> nodes;
+    private Node firstNode;
     private PriorityQueue<Event> eventQueue;
 
-    public DHTSimulator() {
-        nodes = new ArrayList<>();
+    public DHTSimulator(Node node) {
+        this.firstNode = node;
         eventQueue = new PriorityQueue<>();
     }
 
@@ -32,6 +32,67 @@ public class DHTSimulator {
     }
 
     // Méthode pour ajouter un nœud au réseau
+    public void join2(Node newNode){
+
+        //cas pour inserer le premier noeud
+        if (this.firstNode.getNext()==this.firstNode.getPrev()){
+            this.firstNode.setNext(newNode);
+            this.firstNode.setPrev(newNode);
+            newNode.setPrev(this.firstNode);
+            newNode.setNext(this.firstNode);
+        }
+        //cas si il y a deja plus de 2 noeuds
+        else{
+            Node currentNode=this.firstNode;
+            if (currentNode.getId()<newNode.getId()){
+                while (true){
+                    if(currentNode.getId()< newNode.getId() && newNode.getId()<currentNode.getNext().getId()){
+                        currentNode.setNext(newNode);
+                        newNode.setPrev(currentNode);
+                        currentNode.getNext().setPrev(newNode);
+                        newNode.setNext(currentNode.getNext());
+                        break;
+
+                    }
+                    if (currentNode.getId()<newNode.getId() && currentNode.getId()>currentNode.getNext().getId())
+                        currentNode.setNext(newNode);
+                        newNode.setPrev(currentNode);
+                        currentNode.getNext().setPrev(newNode);
+                        newNode.setNext(currentNode.getNext());
+                        break;
+
+
+
+
+                }
+                currentNode=currentNode.getNext();
+            }
+            else{
+                while (true){
+                    if(currentNode.getId()> newNode.getId() && newNode.getId()>currentNode.getPrev().getId()){
+                        currentNode.setPrev(newNode);
+                        newNode.setNext(currentNode);
+                        currentNode.getPrev().setNext(newNode);
+                        newNode.setPrev(currentNode.getPrev());
+                        break;
+
+                    }
+                    if (currentNode.getId()>newNode.getId() && currentNode.getId()<currentNode.getPrev().getId())
+                        currentNode.setPrev(newNode);
+                        newNode.setNext(currentNode);
+                        currentNode.getPrev().setNext(newNode);
+                        newNode.setPrev(currentNode.getPrev());
+                    break;
+
+
+
+
+                }
+                currentNode=currentNode.getNext();
+            }
+
+            }
+    }
     public void join(Node newNode) {
         if (nodes.isEmpty()) {
             nodes.add(newNode);
