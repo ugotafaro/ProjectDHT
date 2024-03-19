@@ -3,7 +3,7 @@ import java.util.List;
 import java.util.PriorityQueue;
 
 public class DHTSimulator {
-    private List<Node> nodes;
+    private ArrayList<Integer> nodes;
     private PriorityQueue<Event> eventQueue;
 
     public DHTSimulator() {

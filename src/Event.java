@@ -2,6 +2,8 @@ import java.util.*;
 
 // Classe représentant un événement dans la simulation
 class Event implements Comparable<Event> {
+
+    // Enumération des types d'événements
     public enum Type {
         JOIN, LEAVE
     }
@@ -31,5 +33,6 @@ class Event implements Comparable<Event> {
     @Override
     public int compareTo(Event other) {
         return Integer.compare(this.time, other.time);
+
     }
 }

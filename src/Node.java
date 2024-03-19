@@ -1,33 +1,49 @@
 public class Node {
 
-    private int id;
-    private Node next;
-    private Node prev;
+   //do a class for a node in DHT in discret event simulation
+    private int id; //id of the node
+    private int data; //data stored in the node
+    private int next; //next node in the DHT
+    private int prev; //previous node in the DHT
 
-    public Node(int id) {
+
+
+    public Node(int id, int data) {
         this.id = id;
-        this.next = null;
-        this.prev = null;
+        this.data = data;
     }
 
     public int getId() {
-        return id;
+        return this.id;
     }
 
-    public void setNext(Node next) {
+    public int getData() {
+        return this.data;
+    }
+
+    public int getNext() {
+        return this.next;
+    }
+
+    public int getPrev() {
+        return this.prev;
+    }
+
+    public void setNext(int next) {
         this.next = next;
     }
 
-    public Node getNext() {
-        return next;
-    }
-
-    public void setPrev(Node prev) {
+    public void setPrev(int prev) {
         this.prev = prev;
     }
 
-    public Node getPrev() {
-        return prev;
+    public void setData(int data) {
+        this.data = data;
+    }
+
+
+    public void printNode() {
+        System.out.println("Node ID: " + this.id + " Data: " + this.data);
     }
 
 
