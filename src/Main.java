@@ -2,13 +2,18 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-        //arraylist of id of nodes
-        ArrayList<Integer> idList = new ArrayList<Integer>();
+        Node n1=new Node(1,5);
+        Node n2=new Node(2,5);
+        Node n3=new Node(3,5);
 
-        //add 10 nodes to the list
-        for (int i = 0; i < 10; i++) {
-            idList.add(i);
-        }
+        DHTSimulator dht=new DHTSimulator();
+
+        dht.addNode(n1);
+        dht.addNode(n2);
+        dht.addNode(n3);
+
+        System.out.println(dht.getNodes());
+        System.out.println(n2.getIndex());
 
 
 

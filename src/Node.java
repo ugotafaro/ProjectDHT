@@ -7,11 +7,23 @@ public class Node {
     private int prev; //previous node in the DHT
 
 
+    private int index;
+
 
     public Node(int id, int data) {
         this.id = id;
         this.data = data;
+        this.index=-1;
+
     }
+    public int getIndex() {
+        return index;
+    }
+
+    public void setIndex(int index) {
+        this.index = index;
+    }
+
 
     public int getId() {
         return this.id;
