@@ -1,38 +1,36 @@
 import java.util.*;
 
 // Classe représentant un événement dans la simulation
-class Event implements Comparable<Event> {
+public abstract class Event implements Comparable<Event> {
 
-    // Enumération des types d'événements
-    public enum Type {
-        JOIN, LEAVE
-    }
+   private Node node;
+   private double time;
 
-    private Type type;
-    private Node node;
-    private int time;
+   private DHTSimulator simulator;
 
-    public Event(Type type, Node node, int time) {
-        this.type = type;
+    public Event( double time, DHTSimulator simulator,Node node) {
         this.node = node;
+        this.simulator = simulator;
         this.time = time;
+
     }
 
-    public Type getType() {
-        return type;
-    }
+
 
     public Node getNode() {
         return node;
     }
 
-    public int getTime() {
+    public double getTime() {
         return time;
     }
 
+    public abstract void execute();
+
+
     @Override
     public int compareTo(Event other) {
-        return Integer.compare(this.time, other.time);
+        return Double.compare(this.time, other.time);
 
     }
 }

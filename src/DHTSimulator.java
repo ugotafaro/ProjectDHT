@@ -13,7 +13,7 @@ public class DHTSimulator {
     }
 
     // Méthode pour ajouter un événement à la file d'événements
-    private void addEvent(Event event) {
+    public void addEvent(Event event) {
         eventQueue.add(event);
     }
 
@@ -22,6 +22,22 @@ public class DHTSimulator {
         node.setIndex(this.nodes.size());
         this.nodes.add(node);
 
+    }
+
+public void simulate(int endTime) {
+
+        while (!eventQueue.isEmpty()) {
+            Event event = eventQueue.poll();
+            if (event.getTime() > endTime) {
+
+                break;
+            }
+            if (event instanceof JoinEvent) {
+                event.execute();
+            } else if (event instanceof LeaveEvent) {
+                event.execute();
+            }
+        }
     }
     public ArrayList<Node> getNodes() {
         return nodes;
@@ -33,20 +49,6 @@ public class DHTSimulator {
 
 }
 
-//    public void simulate(int endTime) {
-//        while (!eventQueue.isEmpty()) {
-//            Event event = eventQueue.poll();
-//            if (event.getTime() > endTime) {
-//                break;
-//            }
-//            if (event.getType() == Event.Type.JOIN) {
-//                join(event.getNode());
-//            } else if (event.getType() == Event.Type.LEAVE) {
-//                leave(event.getNode());
-//            }
-//        }
-//    }
-//}
     // Méthode pour ajouter un nœud au réseau
 //    public void join(Node newNode) {
 //       if (nodes.isEmpty()) {
