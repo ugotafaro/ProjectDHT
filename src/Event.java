@@ -3,27 +3,32 @@ import java.util.*;
 // Classe représentant un événement dans la simulation
 public abstract class Event implements Comparable<Event> {
 
-   private Node node;
+
+    private int receiver;
+   private int sender;
    private double time;
 
 
 
     private DHTSimulator simulator;
 
-    public Event( double time, DHTSimulator simulator,Node node) {
-        this.node = node;
+    public Event( double time, DHTSimulator simulator,int sender,int receiver) {
+        this.sender = sender;
+        this.receiver = receiver;
         this.simulator = simulator;
         this.time = time;
 
     }
-    public DHTSimulator getSimulator() {
-        return simulator;
+    public int getReceiver() {
+        return receiver;
     }
 
 
 
-    public Node getNode() {
-        return node;
+
+
+    public int getSender() {
+        return sender;
     }
 
     public double getTime() {
