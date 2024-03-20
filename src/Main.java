@@ -8,10 +8,18 @@ public class Main {
         Node node1 = new Node(1, 10);
         Node node2 = new Node(2, 20);
         Node node3 = new Node(3, 30);
+        Node node4 = new Node(4, 40);
+        Node node5 = new Node(5, 50);
+        Node node6 = new Node(6, 60);
+        Node node7 = new Node(7, 70);
         Network nodes = Network.getInstance();
         nodes.addNode(node1);
         nodes.addNode(node2);
         nodes.addNode(node3);
+        nodes.addNode(node4);
+        nodes.addNode(node5);
+        nodes.addNode(node6);
+        nodes.addNode(node7);
         System.out.println("ffffff");
         System.out.println(node1.getIndex());
         System.out.println(node2.getIndex());
@@ -21,18 +29,22 @@ public class Main {
         DHTSimulator simulator = new DHTSimulator(node1);
 
 
-        //simulator.addEvent(new JoinEvent(5, simulator, node1,node1));
-        //simulator.addEvent(new JoinEvent(10, simulator, node2));
-        //simulator.addEvent(new JoinEvent(15, simulator, node3));
+        simulator.addEvent(new JoinEvent(5, simulator, node2.getIndex(),simulator.getNode().getIndex(),node2.getIndex()));
+        simulator.addEvent(new JoinEvent(10, simulator, node3.getIndex(),simulator.getNode().getIndex(),node3.getIndex()));
+        simulator.addEvent(new JoinEvent(15, simulator, node4.getIndex(),simulator.getNode().getIndex(),node4.getIndex()));
+        simulator.addEvent(new JoinEvent(20, simulator, node5.getIndex(),simulator.getNode().getIndex(),node5.getIndex()));
+        simulator.addEvent(new JoinEvent(25, simulator, node6.getIndex(),simulator.getNode().getIndex(),node6.getIndex()));
+        simulator.addEvent(new JoinEvent(30, simulator, node7.getIndex(),simulator.getNode().getIndex(),node7.getIndex()));
+
 
         // Exécuter la simulation jusqu'à ce que le temps spécifié soit écoulé
-        simulator.simulate(20);
+        simulator.simulate(40);
 
 
-        //System.out.println(node1.getNext());
-        //System.out.println(node2.getNext());
+        System.out.println(node1.getNext());
+        System.out.println(node2.getNext());
 
-        //System.out.println(node3.getNext());
+        System.out.println(node3.getNext());
 
 
 

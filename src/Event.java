@@ -43,4 +43,8 @@ public abstract class Event implements Comparable<Event> {
         return Double.compare(this.time, other.time);
 
     }
+
+    protected DHTSimulator getSimulator() {
+        return simulator;
+    }
 }
