@@ -2,28 +2,33 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-        Node n1=new Node(1,5);
-        Node n2=new Node(2,5);
-        Node n3=new Node(3,5);
-        //create 4 more nodes
-        Node n4=new Node(4,5);
-        Node n5=new Node(5,5);
-        Node n6=new Node(6,5);
-        Node n7=new Node(7,5);
+        DHTSimulator simulator = new DHTSimulator();
+
+        // Créer et ajouter des nœuds au simulateur
+        Node node1 = new Node(1, 10);
+        Node node2 = new Node(2, 20);
+        Node node3 = new Node(3, 30);
+        simulator.addNode(node1);
+        simulator.addNode(node2);
+        simulator.addNode(node3);
+        System.out.println("ffffff");
+        System.out.println(node1.getIndex());
+        System.out.println(node2.getIndex());
+        System.out.println(node3.getIndex());
+
+        // Planifier l'événement de join pour chaque nœud à un temps spécifique
+        simulator.addEvent(new JoinEvent(5, simulator, node1));
+        simulator.addEvent(new JoinEvent(10, simulator, node2));
+        simulator.addEvent(new JoinEvent(15, simulator, node3));
+
+        // Exécuter la simulation jusqu'à ce que le temps spécifié soit écoulé
+        simulator.simulate(20);
 
 
-        DHTSimulator dht=new DHTSimulator();
-
-
-        Event join1=new JoinEvent(1,dht,n4);
-        Event join2=new JoinEvent(5,dht,n5);
-        Event join3=new JoinEvent(3,dht,n6);
-
-        dht.addEvent(join1);
-        dht.addEvent(join2);
-        dht.addEvent(join3);
-
-        dht.simulate(15);
+        System.out.println(node1.getNext());
+        System.out.println(node2.getNext());
+        System.out.println(simulator.getNodes());
+        System.out.println(node3.getNext());
 
 
 

@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.List;
 import java.util.PriorityQueue;
 
 public class DHTSimulator {
@@ -23,8 +22,18 @@ public class DHTSimulator {
         this.nodes.add(node);
 
     }
+    public Node getFirstNode() {
+        Node n1= this.nodes.get(0);
+        n1.setNext(0);
+        n1.setPrev(0);
+        return n1;
+    }
+    public Node getNodeByIndex(int index){
+        return this.nodes.get(index);
+    }
 
-public void simulate(int endTime) {
+
+    public void simulate(int endTime) {
 
         while (!eventQueue.isEmpty()) {
             Event event = eventQueue.poll();

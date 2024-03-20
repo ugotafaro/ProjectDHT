@@ -6,13 +6,18 @@ public abstract class Event implements Comparable<Event> {
    private Node node;
    private double time;
 
-   private DHTSimulator simulator;
+
+
+    private DHTSimulator simulator;
 
     public Event( double time, DHTSimulator simulator,Node node) {
         this.node = node;
         this.simulator = simulator;
         this.time = time;
 
+    }
+    public DHTSimulator getSimulator() {
+        return simulator;
     }
 
 

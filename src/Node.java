@@ -3,8 +3,8 @@ public class Node {
    //do a class for a node in DHT in discret event simulation
     private int id; //id of the node
     private int data; //data stored in the node
-    private int next; //next node in the DHT
-    private int prev; //previous node in the DHT
+    private int next; //index of next  node in the DHT
+    private int prev; //index of previous  node in the DHT
 
 
     private int index;
