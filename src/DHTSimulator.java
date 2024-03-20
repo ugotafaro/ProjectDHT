@@ -3,11 +3,13 @@ import java.util.PriorityQueue;
 
 public class DHTSimulator {
 
-    private ArrayList<Node> nodes;
+
+
+    private Node node;
     private PriorityQueue<Event> eventQueue;
 
-    public DHTSimulator() {
-        nodes = new ArrayList<>();
+    public DHTSimulator(Node node) {
+        this.node = node;
         eventQueue = new PriorityQueue<>();
     }
 
@@ -15,22 +17,14 @@ public class DHTSimulator {
     public void addEvent(Event event) {
         eventQueue.add(event);
     }
+    public Node getNode() {
+        return node;
+    }
 
-    public void addNode(Node node) {
-        System.out.println(this.nodes.size());
-        node.setIndex(this.nodes.size());
-        this.nodes.add(node);
+    public void setNode(Node node) {
+        this.node = node;
+    }
 
-    }
-    public Node getFirstNode() {
-        Node n1= this.nodes.get(0);
-        n1.setNext(0);
-        n1.setPrev(0);
-        return n1;
-    }
-    public Node getNodeByIndex(int index){
-        return this.nodes.get(index);
-    }
 
 
     public void simulate(int endTime) {
@@ -48,13 +42,7 @@ public class DHTSimulator {
             }
         }
     }
-    public ArrayList<Node> getNodes() {
-        return nodes;
-    }
 
-    public void setNodes(ArrayList<Node> nodes) {
-        this.nodes = nodes;
-    }
 
 }
 

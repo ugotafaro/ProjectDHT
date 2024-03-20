@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-        DHTSimulator simulator = new DHTSimulator();
+
 
         // Créer et ajouter des nœuds au simulateur
         Node node1 = new Node(1, 10);
@@ -17,6 +17,8 @@ public class Main {
         System.out.println(node2.getIndex());
         System.out.println(node3.getIndex());
         System.out.println(nodes.getNodes());
+
+        DHTSimulator simulator = new DHTSimulator(node1);
 
 //        // Planifier l'événement de join pour chaque nœud à un temps spécifique
 //        simulator.addEvent(new JoinEvent(5, simulator, node1));
