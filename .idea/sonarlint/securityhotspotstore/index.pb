@@ -15,3 +15,25 @@ S
 ProjectDHT.iml,c\4\c4c26e20355b0ead6c9c56cfd920883a434c55da
 
 Q.idea/sonarlint/securityhotspotstore/3/a/3ab60872f365ff6fee76b90596b6f298e0190389,a\a\aab37f54cf5032ff01b5bbedf80682c0a8c03f0a
+=
+src/Main.java,9\2\924f089edb4af5ee45c8a9d1129cd28e2b368138
+>
+src/State.java,3\9\39c1ac2e8704bb7d59cfcb604250a7b48d673a40
+>
+src/Event.java,1\7\173b2353f2e69e055d0d191890ce1bf0ce1fc0e3
+B
+src/JoinEvent.java,8\1\817e7b994cef0b26b83f041816f4b4b5a68a9f72
+C
+src/LeaveEvent.java,9\a\9a7f15819e8fc7ce5bc494a563074ad2941fe255
+@
+src/Network.java,8\5\85503098492c99936f3679cb9fd5528e52b9cd15
+O
+src/ValidateInsertionEvent.java,c\7\c7828da6ae58d4446e5878709f10f7445c76af9b
+H
+src/InsertNodeEvent.java,5\6\5608fe30b945e14f77ae799aed5c45a9a44d0209
+G
+src/inforPrevEvent.java,3\0\3078f86b224b32ca70fcaaceb5ab95cf588c7220
+H
+src/InformNextEvent.java,8\d\8d044fff77b5bce5c52010a4395c517a45609512
+H
+src/InformPrevEvent.java,1\2\1276c497acb4111609327cc518b42db66c279f81
