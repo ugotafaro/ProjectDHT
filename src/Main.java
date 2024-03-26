@@ -34,7 +34,7 @@ public class Main {
         //JoinEvent j3=(new JoinEvent(15, simulator, node4.getIndex(),simulator.getNode().getIndex(),node4.getIndex()));
         //JoinEvent j4=(new JoinEvent(20, simulator, node5.getIndex(),simulator.getNode().getIndex(),node5.getIndex()));
         //JoinEvent j5=(new JoinEvent(25, simulator, node6.getIndex(),simulator.getNode().getIndex(),node6.getIndex()));
-        LeaveEvent l1=(new LeaveEvent(30,simulator,node2.getIndex(),simulator.getNode().getIndex()));
+        //LeaveEvent l1=(new LeaveEvent(30,simulator,node2.getIndex(), node2.getIndex()));
         JoinEvent j6=(new JoinEvent(35, simulator, node7.getIndex(),simulator.getNode().getIndex(),node7.getIndex()));
         LeaveEvent l2=(new LeaveEvent(40,simulator,node7.getIndex(),simulator.getNode().getIndex()));
 

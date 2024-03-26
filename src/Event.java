@@ -18,7 +18,7 @@ public abstract class Event implements Comparable<Event> {
         this.simulator = simulator;
         this.time = time;
         simulator.addEvent(this);
-        System.out.println("Event created at time " + time + " between " + sender + " and " + receiver + "");
+        //System.out.println("Event created at time " + time + " between " + sender + " and " + receiver + "");
 
     }
     public int getReceiver() {

@@ -14,13 +14,13 @@ public class JoinEvent extends Event {
     public void joinRequest(){
         if (super.getSender() !=newIndex){
             if(isBetween(Network.getInstance().findIdByIndex(newIndex),Network.getInstance().findIdByIndex(getSender()),Network.getInstance().findIdByIndex(getReceiver()) )){
-                System.out.println("node index"+getReceiver()+"a changer son prev par le node index"+newIndex);
+                //System.out.println("node index"+getReceiver()+"a changer son prev par le node index"+newIndex);
                 Network.getInstance().findNode(super.getSender()).setPrev(newIndex);
                 insertNode();
 
             }
             else if(isEndOfRing(Network.getInstance().findIdByIndex(newIndex),Network.getInstance().findIdByIndex(getSender()),Network.getInstance().findIdByIndex(getReceiver()))){
-                System.out.println("node index"+getReceiver()+"a changer son prev par le node index"+newIndex);
+                //System.out.println("node index"+getReceiver()+"a changer son prev par le node index"+newIndex);
                 Network.getInstance().findNode(super.getSender()).setPrev(newIndex);
                 insertNode();
 

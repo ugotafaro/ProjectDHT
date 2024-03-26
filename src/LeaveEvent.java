@@ -8,8 +8,10 @@ public class LeaveEvent extends Event
 
     @Override
     public void execute(){
-        InformPrevEvent informPrevEvent = new InformPrevEvent(this.getTime(), this.getSimulator(), this.getSender(), Network.getInstance().findNode(this.getSender()).getPrev());
-        InformNextEvent informNextEvent = new InformNextEvent(this.getTime(), this.getSimulator(), this.getSender(), Network.getInstance().findNode(this.getSender()).getNext());
+        System.out.println("Le noeud " + super.getSender() + " a quitté le réseau à l'instant " + this.getTime());
+
+        InformPrevEvent informPrevEvent = new InformPrevEvent(this.getTime(), this.getSimulator(), this.getSender(), Network.getInstance().findNode(this.getSender()).getPrev(),Network.getInstance().findNode(this.getSender()).getNext());
+        InformNextEvent informNextEvent = new InformNextEvent(this.getTime(), this.getSimulator(), this.getSender(), Network.getInstance().findNode(this.getSender()).getNext(),Network.getInstance().findNode(this.getSender()).getPrev());
         informPrevEvent.execute();
         informNextEvent.execute();
     }
