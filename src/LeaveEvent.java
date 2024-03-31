@@ -12,8 +12,7 @@ public class LeaveEvent extends Event
 
         InformPrevEvent informPrevEvent = new InformPrevEvent(this.getTime(), this.getSimulator(), this.getSender(), Network.getInstance().findNode(this.getSender()).getPrev(),Network.getInstance().findNode(this.getSender()).getNext());
         InformNextEvent informNextEvent = new InformNextEvent(this.getTime(), this.getSimulator(), this.getSender(), Network.getInstance().findNode(this.getSender()).getNext(),Network.getInstance().findNode(this.getSender()).getPrev());
-        informPrevEvent.execute();
-        informNextEvent.execute();
+
     }
 
 

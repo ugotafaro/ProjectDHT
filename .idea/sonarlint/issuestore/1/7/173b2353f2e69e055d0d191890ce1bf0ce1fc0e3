@@ -1,10 +1,10 @@
 
 ]
-java:S1220""Move this file to a named package.8ο ξε1J$5f3b9115-6883-4847-9be8-14c3781d409d
+java:S1220""Move this file to a named package.8ο ξε1J$c1d2e64c-97a6-4593-8506-c5032106ca54
 ΅
-java:S1210,"YOverride "equals(Object obj)" to comply with the contract of the "compareTo(T o)" method.(Ύ•ϋÿÿÿÿ8σ ξε1J$94271be8-116a-4e87-a806-2949c4f10e4b
+java:S1210,"YOverride "equals(Object obj)" to comply with the contract of the "compareTo(T o)" method.(Ύ•ϋÿÿÿÿ8σ ξε1J$f606a3bb-22b7-49b4-aa9d-251e10803e7a
 |
-java:S5993"9Change the visibility of this constructor to "protected".(™„Β®8υ ξε1J$3faef707-f031-4ec3-b0ea-ea5bf5722c74
-r	java:S106"+Replace this use of System.out by a logger.(Ήαισωÿÿÿÿ8ƒνΊςε1J$fca77120-7e9b-46d5-9958-7eb1f37c228e
+java:S5993"9Change the visibility of this constructor to "protected".(™„Β®8υ ξε1J$5a8775c9-17e0-4b57-8649-479dad1db38c
+r	java:S106"+Replace this use of System.out by a logger.(Ήαισωÿÿÿÿ8ό°ΉΣθ1J$e6ad2f18-1e91-4a14-8e1a-b1009df6521c
 i
-java:S1128"&Remove this unused import 'java.util'.(Ξ€Ω8κΟ¥ξε1J$299036c1-9aab-46f4-b566-b1b760901f49
+java:S1128"&Remove this unused import 'java.util'.(Ξ€Ω8κΟ¥ξε1J$1c65194e-d5f5-40fd-a3e9-de73922d5af7

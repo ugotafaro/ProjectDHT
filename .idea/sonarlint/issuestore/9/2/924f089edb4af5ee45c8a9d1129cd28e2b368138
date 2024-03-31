@@ -1,34 +1,45 @@
 
 ]
-java:S1220""Move this file to a named package.8ä¿Ûæ1J$e68c5a8d-7e30-4172-823d-b4a1a3069ad5
+java:S1220""Move this file to a named package.8ä¿Ûæ1J$0138bec5-961b-4c67-bea1-388b557a7f35
 ~
-java:S1854'"6Remove this useless assignment to local variable "l2".(š„¹üÿÿÿÿ8™ÀÛæ1J$3e2d3264-649a-446b-a856-0b149f850e2c
+java:S1854("6Remove this useless assignment to local variable "l1".(¤ñõ³ùÿÿÿÿ8ş³ãÓè1J$9c713d41-0607-4083-8ca8-61fe10aca09d
 y
-java:S1854&"6Remove this useless assignment to local variable "j6".(°ÿ¯8šÀÛæ1J$bb39853b-0e79-4bc1-85eb-0c6fb3af262d
+java:S1854'"6Remove this useless assignment to local variable "l2".(´İ®8„ØèÓè1J$32a266ba-5e8b-43eb-a196-47f073badc6f
+y
+java:S1854&"6Remove this useless assignment to local variable "j6".(‚Ìä8æíàÓè1J$62986376-9563-45d0-a3ac-178a55fccb98
+y
+java:S1854$"6Remove this useless assignment to local variable "j5".(ƒ œ–8èíàÓè1J$a0680661-9610-4b85-a32c-c5713f79999b
+y
+java:S1854#"6Remove this useless assignment to local variable "j4".(é€Ëç8èíàÓè1J$d9cd7e5a-00a2-474d-87f4-ee2f2cf05050
 ~
-java:S1854%"6Remove this useless assignment to local variable "l1".(ø†ĞÇøÿÿÿÿ8šÀÛæ1J$02a1b406-4146-427b-8fe0-57f5f1499388
+java:S1854""6Remove this useless assignment to local variable "j3".(áÚß†üÿÿÿÿ8èíàÓè1J$ccb407ca-8106-4127-9992-0885815f9d8f
 ~
-java:S1854!"6Remove this useless assignment to local variable "j2".(®îìˆùÿÿÿÿ8˜¾ôæ1J$c10fc6c1-858b-4dde-b2f7-45cd3d03b087
+java:S1854!"6Remove this useless assignment to local variable "j2".(®îìˆùÿÿÿÿ8˜¾ôæ1J$b5f65bf1-8af1-435d-85e7-c7e4783673c3
 ~
-java:S1854 "6Remove this useless assignment to local variable "j1".(¢µÎĞÿÿÿÿÿ8œÀÛæ1J$39f93911-8213-4003-b4bc-8c143bcacde0
-l	java:S106"+Replace this use of System.out by a logger.(±~8­ÀÛæ1J$9a094de7-85d3-45cb-aef2-0bdf9fbf854f
-r	java:S106"+Replace this use of System.out by a logger.(‰ƒ¢×ùÿÿÿÿ8¯ÀÛæ1J$4a86cc7f-1351-48f2-9f6a-f18af9a70447
-r	java:S106"+Replace this use of System.out by a logger.(ŸÓŠÿüÿÿÿÿ8±ÀÛæ1J$e07d561a-4cdf-40b5-b872-df1e651924be
-r	java:S106"+Replace this use of System.out by a logger.(ˆ’œàÿÿÿÿÿ8³ÀÛæ1J$f4f2b73b-8aa5-455f-9142-08a4f02760dc
-m	java:S106"+Replace this use of System.out by a logger.(åâ”ü8µÀÛæ1J$261e2941-dc8b-4135-8a0f-3adc1162e43a
+java:S1854 "6Remove this useless assignment to local variable "j1".(¢µÎĞÿÿÿÿÿ8œÀÛæ1J$d8a5b6d2-81b4-481e-98e1-d83c2963ef36
+l	java:S106"+Replace this use of System.out by a logger.(±~8­ÀÛæ1J$742ecca2-3346-4cc8-a0f0-e483cfcaa6fc
+r	java:S106"+Replace this use of System.out by a logger.(‰ƒ¢×ùÿÿÿÿ8¯ÀÛæ1J$ef21db6f-7d67-4631-81b3-fcf4460c4be4
+r	java:S106"+Replace this use of System.out by a logger.(ŸÓŠÿüÿÿÿÿ8±ÀÛæ1J$1da8fa4f-5dbb-4233-8e51-8b6ae5494457
+r	java:S106"+Replace this use of System.out by a logger.(ˆ’œàÿÿÿÿÿ8³ÀÛæ1J$5f73e715-cda3-4aab-b945-51b9712cb7ea
+m	java:S106"+Replace this use of System.out by a logger.(åâ”ü8µÀÛæ1J$f3f3b7ce-24b5-4636-9ec9-61a8330b83bf
 o
-java:S1481 "'Remove this unused "j1" local variable.(¢µÎĞÿÿÿÿÿ8»ÀÛæ1J$3c73cfdd-b762-4231-8ae8-1fdcc2cfd3fe
+java:S1481 "'Remove this unused "j1" local variable.(¢µÎĞÿÿÿÿÿ8»ÀÛæ1J$e96ff5d2-f710-43c7-9ddc-d17874bcd299
 o
-java:S1481!"'Remove this unused "j2" local variable.(®îìˆùÿÿÿÿ8©¾ôæ1J$fc4a3a8a-5bd6-4d4a-9234-1241ac2f5279
-ƒ	java:S125""<This block of commented-out lines of code should be removed.(²Õë×ùÿÿÿÿ8ª¾ôæ1J$b1b4ae46-a1a5-406e-a37e-8f333c9c89eb
+java:S1481!"'Remove this unused "j2" local variable.(®îìˆùÿÿÿÿ8©¾ôæ1J$102d4b57-0af4-491c-8a5d-dc8462187efb
 o
-java:S1481%"'Remove this unused "l1" local variable.(ø†ĞÇøÿÿÿÿ8ÎÀÛæ1J$8d710b59-505a-4dfa-8867-942ad8b527f0
+java:S1481""'Remove this unused "j3" local variable.(áÚß†üÿÿÿÿ8ıíàÓè1J$9bc3849e-e084-497d-be61-b8b236b0737c
 j
-java:S1481&"'Remove this unused "j6" local variable.(°ÿ¯8ÒÀÛæ1J$305524d3-1079-4fbf-9c25-ad0c3755e761
+java:S1481#"'Remove this unused "j4" local variable.(é€Ëç8şíàÓè1J$1748d4f3-0e53-429f-9f77-a357bfb2ea34
+j
+java:S1481$"'Remove this unused "j5" local variable.(ƒ œ–8ÿíàÓè1J$1857b7fe-fd4c-4bcf-90ad-079e12a16950
+j
+java:S1481&"'Remove this unused "j6" local variable.(‚Ìä8€îàÓè1J$efd15bee-41fc-4b03-a8fe-326d03aa3678
+j
+java:S1481'"'Remove this unused "l2" local variable.(´İ®8ØèÓè1J$5b900d9f-a54e-41d6-8073-8a995eaee691
 o
-java:S1481'"'Remove this unused "l2" local variable.(š„¹üÿÿÿÿ8ÔÀÛæ1J$1594edce-a0f4-434d-b62c-0678e929a8c4
-l	java:S106."+Replace this use of System.out by a logger.(ùã„Z8×ÀÛæ1J$6c5573ad-ad3d-4332-8770-f62639c126fa
-r	java:S106/"+Replace this use of System.out by a logger.(â±ñ ÿÿÿÿÿ8ÙÀÛæ1J$17fd2a85-635d-429e-89f8-8ce794012eaa
-r	java:S1061"+Replace this use of System.out by a logger.(¨É’¶üÿÿÿÿ8ÜÀÛæ1J$ef6446be-318d-443a-90af-9a3b2cb0cf30
+java:S1481("'Remove this unused "l1" local variable.(¤ñõ³ùÿÿÿÿ8ˆ´ãÓè1J$5cf05382-e9fc-4e2d-9970-302ea422005f
+l	java:S106."+Replace this use of System.out by a logger.(ùã„Z8×ÀÛæ1J$e9231f20-8499-425b-9470-8cac26b9a454
+r	java:S106/"+Replace this use of System.out by a logger.(â±ñ ÿÿÿÿÿ8ÙÀÛæ1J$6d107c5c-50c8-4b52-a51e-dac74200c37e
+r	java:S1061"+Replace this use of System.out by a logger.(¨É’¶üÿÿÿÿ8ÜÀÛæ1J$ddae435a-1724-4c93-8e12-5ac94dbcc2ad
 s
-java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8àÀÛæ1J$23608b86-3666-4b47-95a0-9fb6af6b1453
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8ªÏÔÓè1J$c8146469-434d-4035-98c4-27ab8f1a057b

@@ -47,12 +47,12 @@ public class JoinEvent extends Event {
     public void insertNode(){
         // Créer et exécuter un InsertNodeEvent
         InsertNodeEvent insertNodeEvent = new InsertNodeEvent(super.getTime(), super.getSimulator(), getSender(), getReceiver(), newIndex);
-        insertNodeEvent.execute();
+
 
         // Créer et exécuter un ValidateInsertionEvent
 
         ValidateInsertionEvent validateInsertionEvent = new ValidateInsertionEvent(super.getTime(), super.getSimulator(), getSender(), getReceiver(), newIndex);
-        validateInsertionEvent.execute();
+
     }
 
     private boolean isBetween(int id, int start, int end) {

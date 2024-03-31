@@ -3,7 +3,7 @@ public class InformPrevEvent extends Event {
     public InformPrevEvent(double time, DHTSimulator simulator, int sender, int receiver,int newIndex) {
         super(time, simulator, sender, receiver);
         this.newIndex = newIndex;
-        simulator.addEvent(this);
+
     }
 
     @Override

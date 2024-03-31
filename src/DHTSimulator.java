@@ -3,14 +3,20 @@ import java.util.PriorityQueue;
 
 public class DHTSimulator {
 
-
+    private static DHTSimulator instance = null;
 
     private Node node;
     private PriorityQueue<Event> eventQueue;
-
-    public DHTSimulator(Node node) {
+    private DHTSimulator(Node node) {
         this.node = node;
         eventQueue = new PriorityQueue<>();
+    }
+
+    public static DHTSimulator getInstance(Node node) {
+        if (instance == null) {
+            instance = new DHTSimulator(node);
+        }
+        return instance;
     }
 
     // Méthode pour ajouter un événement à la file d'événements
@@ -35,15 +41,14 @@ public class DHTSimulator {
 
                 break;
             }
-            if (event instanceof JoinEvent) {
+            if (event instanceof Event) {
                 event.execute();
-            } else if (event instanceof LeaveEvent) {
-                event.execute();
-            }
+
         }
     }
 
 
+    }
 }
 
     // Méthode pour ajouter un nœud au réseau

@@ -26,21 +26,21 @@ public class Main {
         System.out.println(node3.getIndex());
         System.out.println(nodes.getNodes());
 
-        DHTSimulator simulator = new DHTSimulator(node1);
+        DHTSimulator simulator = DHTSimulator.getInstance(node1);
 
 
         JoinEvent j1=(new JoinEvent(5, simulator, node2.getIndex(),simulator.getNode().getIndex(),node2.getIndex()));
         JoinEvent j2=(new JoinEvent(10, simulator, node3.getIndex(),simulator.getNode().getIndex(),node3.getIndex()));
-        //JoinEvent j3=(new JoinEvent(15, simulator, node4.getIndex(),simulator.getNode().getIndex(),node4.getIndex()));
-        //JoinEvent j4=(new JoinEvent(20, simulator, node5.getIndex(),simulator.getNode().getIndex(),node5.getIndex()));
-        //JoinEvent j5=(new JoinEvent(25, simulator, node6.getIndex(),simulator.getNode().getIndex(),node6.getIndex()));
-        //LeaveEvent l1=(new LeaveEvent(30,simulator,node2.getIndex(), node2.getIndex()));
-        JoinEvent j6=(new JoinEvent(35, simulator, node7.getIndex(),simulator.getNode().getIndex(),node7.getIndex()));
-        LeaveEvent l2=(new LeaveEvent(40,simulator,node7.getIndex(),simulator.getNode().getIndex()));
+        JoinEvent j3=(new JoinEvent(15, simulator, node4.getIndex(),simulator.getNode().getIndex(),node4.getIndex()));
+        JoinEvent j4=(new JoinEvent(20, simulator, node5.getIndex(),simulator.getNode().getIndex(),node5.getIndex()));
+        JoinEvent j5=(new JoinEvent(25, simulator, node6.getIndex(),simulator.getNode().getIndex(),node6.getIndex()));
 
+        JoinEvent j6=(new JoinEvent(40, simulator, node7.getIndex(),simulator.getNode().getIndex(),node7.getIndex()));
+        LeaveEvent l2=(new LeaveEvent(50,simulator,node2.getIndex(),simulator.getNode().getIndex()));
+        LeaveEvent l1=(new LeaveEvent(45,simulator,node4.getIndex(), node2.getIndex()));
 
         // Exécuter la simulation jusqu'à ce que le temps spécifié soit écoulé
-        simulator.simulate(50);
+        simulator.simulate(70);
 
 
         System.out.println(node1.getNext());
